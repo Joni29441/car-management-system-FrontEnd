@@ -4,35 +4,31 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import { styled } from '@mui/material/styles';
-
-const LinkButton = styled(Link)({
-  textDecoration: 'none',
-  color: 'inherit', 
-});
+import './Navbar.css'; 
 
 const Navbar = () => {
   return (
-    <AppBar position="static">
-      <Toolbar>
-        <Typography variant="h6" style={{ flexGrow: 1 }}>
+    <AppBar position="static" className="navbar">
+      <Toolbar className="toolbar">
+        <Typography variant="h6" className="title">
           Car Management System
         </Typography>
         <Button color="inherit">
-          <LinkButton to="/">Home</LinkButton>
+          <Link to="/">Home</Link>
         </Button>
         <Button color="inherit">
-          <LinkButton to="/login">Login</LinkButton>
+          <Link to="/about">About</Link>
         </Button>
         <Button color="inherit">
-          <LinkButton to="/register">Register</LinkButton>
+          <Link to="/contact">Contact</Link>
         </Button>
         <Button color="inherit">
-          <LinkButton to="/about">About Us</LinkButton>
+          <Link to="/login">Login</Link>
         </Button>
         <Button color="inherit">
-          <LinkButton to="/contact">Contact Us</LinkButton>
+          <Link to="/register">Register</Link>
         </Button>
+
       </Toolbar>
     </AppBar>
   );

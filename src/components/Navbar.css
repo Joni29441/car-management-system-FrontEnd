@@ -1,0 +1,38 @@
+.navbar {
+  background: transparent !important; /* Added !important to override MUI default styles */}
+  
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  .title {
+    flex-grow: 1;
+    font-family: 'Lobster', cursive;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #e90c0c;
+  }
+  
+  .rent-car-button a {
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .rent-car-button a:hover {
+    background-color: darkred;
+  }
+  
