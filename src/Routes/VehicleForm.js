@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import { useNavigate } from 'react-router-dom';
 
 function VehicleForm () {
   const [brand, setBrand] = useState('');
   const [model, setModel] = useState('');
   const [year, setYear] = useState('');
   const [price, setPrice] = useState('');
-  const navigate = useNavigate();
 
  
   const handleOnSubmit = async () => {

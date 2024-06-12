@@ -1,0 +1,32 @@
+.hero-background {
+    background-image: url('/public/pictures/gclass.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: -5%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+  }
+  
+  .learn-more-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .learn-more-button:hover {
+    background-color: darkred;
+  }
+  

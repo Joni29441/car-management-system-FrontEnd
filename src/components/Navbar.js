@@ -4,7 +4,7 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import './Navbar.css'; 
+import '../styles/Navbar.css'; 
 
 const Navbar = () => {
   return (
@@ -23,10 +23,10 @@ const Navbar = () => {
           <Link to="/contact">Contact</Link>
         </Button>
         <Button color="inherit">
-          <Link to="/login">Login</Link>
+          <Link to="/Login">Login</Link>
         </Button>
         <Button color="inherit">
-          <Link to="/register">Register</Link>
+          <Link to="/Register">Register</Link>
         </Button>
 
       </Toolbar>
