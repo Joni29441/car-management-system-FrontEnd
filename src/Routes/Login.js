@@ -20,30 +20,18 @@ function Login({ onLoginSuccess }) {
         },
         body: JSON.stringify({ email, password }),
       });
-
-      const text = await response.text(); // Log the response text
-      console.log('Response text:', text);
-
-      const data = JSON.parse(text); // Parse the text as JSON
-
+      const data = await response.json();
       if (response.ok) {
-        onLoginSuccess(data.token, data.roles || []);
-        setEmail('');
-        setPassword('');
+        onLoginSuccess(data.token);
+        setEmail("");
+        setPassword("");
         setError(null);
-
-        // Navigate based on roles, assume roles are part of the response
-        if (data.roles && data.roles.includes('Admin')) {
-          navigate('/VehicleForm');
-        } else {
-          navigate('/VehicleHome');
-        }
+        navigate('/vehicleForm');
       } else {
-        setError(data.message || 'Login failed');
+        setError(data.message || "Login failed");
       }
     } catch (error) {
-      setError('An error occurred. Please try again.');
-      console.error('Login error:', error); // Log error for debugging
+      setError("An error occurred. Please try again.");
     }
   };
 
@@ -51,27 +39,32 @@ function Login({ onLoginSuccess }) {
     <div className="hero-background">
       <div className="hero-content">
         <form onSubmit={handleOnSubmit}>
-          <TextField
-            variant="outlined"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            label="Email"
-            fullWidth
-            margin="normal"
-          />
-          <TextField
-            variant="outlined"
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            label="Password"
-            fullWidth
-            margin="normal"
-          />
-          {error && <div style={{ color: 'red' }}>{error}</div>}
-          <Button type="submit" variant="contained" color="primary">
-            Login
-          </Button>
+        <TextField
+          variant="outlined"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          label="Email"
+          fullWidth
+          margin="normal"
+        />
+        <TextField
+          variant="outlined"
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          label="Password"
+          fullWidth
+          margin="normal"
+        />
+        {error && <div style={{ color: 'red' }}>{error}</div>}
+
+        <Button bg={'bg-blue-600'} btnText={'Add Logg'} textColor={'whiteBG'}
+         ></Button>
+
+
+      <Button type="submit" variant="contained" color="primary">
+          Login
+        </Button>
         </form>
       </div>
     </div>

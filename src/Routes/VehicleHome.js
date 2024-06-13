@@ -3,7 +3,7 @@ import React from "react";
 const VehicleHome = () => {
     return (
 
-        <h1>OOOO JARIIII</h1>
+        <h1>ALOOOOOOOOO</h1>
     );
 }
 
