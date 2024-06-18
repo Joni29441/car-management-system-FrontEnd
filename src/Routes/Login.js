@@ -50,8 +50,11 @@ function Login({ onLoginSuccess }) {
   return (
     <>
     <HomeNavbar/>
-    <div className="hero-background">
-      <div className="hero-content">
+
+    <div className="min-h-screen flex items-center justify-center hero-background">
+    <div className="hero-content">
+        <div className="bg-white bg-opacity-10 backdrop-blur-md p-8 mx-auto rounded-lg shadow-lg max-w-md w-full">
+          <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
         <form onSubmit={handleOnSubmit}>
           <TextField
             variant="outlined"
@@ -77,6 +80,8 @@ function Login({ onLoginSuccess }) {
         </form>
       </div>
     </div>
+    </div>
+
     </>
   );
 }

@@ -40,6 +40,9 @@ function VehicleForm () {
   return (
     <>
     <AdminNavbar/>
+    <div className="container mx-auto p-4">
+        <div className="max-w-md mx-auto bg-white p-8 border border-gray-300 rounded-lg shadow-md">
+        <h2 className="text-2xl font-bold mb-4 text-center">Add Vehicles</h2>
         <TextField
           variant="outlined"
           value={brand}
@@ -72,12 +75,10 @@ function VehicleForm () {
           fullWidth
           margin="normal"
         />
-          <input
-          type="file"
-          onChange={(e) => setImage(e.target.files[0])}
-          style={{ marginTop: '16px' }}
-        />
+         
         <Button type="submit" variant="contained" color="primary" onClick={handleOnSubmit}>Add Vehicle</Button>
+        </div>
+        </div>
     </>
   );
 };

@@ -9,14 +9,14 @@ const AdminNavbar = () => {
           Car Management System
         </Link>
         <div className="flex space-x-4">
-          <Link to="/vehicleForm" className="hover:bg-gray-700 px-3 py-2 rounded-md">
-            Add Vehicle
+          <Link to="/vehicleHome" className="hover:bg-gray-700 px-3 py-2 rounded-md">
+            Search Vehicles
           </Link>
-          <Link to="/vehicleList" className="hover:bg-gray-700 px-3 py-2 rounded-md">
+          <Link to="/vehicleListUser" className="hover:bg-gray-700 px-3 py-2 rounded-md">
             View Vehicles
           </Link>
-          <Link to="/transactions" className="hover:bg-gray-700 px-3 py-2 rounded-md">
-            Transactions
+          <Link to="/myTransactions" className="hover:bg-gray-700 px-3 py-2 rounded-md">
+            My Transactions
           </Link>
           <Link to="/logout" className="hover:bg-gray-700 px-3 py-2 rounded-md">
             Logout

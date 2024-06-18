@@ -38,9 +38,11 @@ function Register() {
   return (
     <>
     <HomeNavbar/>
-    <div className="hero-background">
-      <div className="hero-content">
-        <form onSubmit={handleOnSubmit}>
+    <div className="min-h-screen flex items-center justify-center hero-background">
+    <div className="hero-content">
+        <div className="bg-white bg-opacity-10 backdrop-blur-md p-8 mx-auto rounded-lg shadow-lg max-w-md w-full">
+          <h2 className="text-2xl font-bold mb-6 text-center">Register Your Account</h2>        
+          <form onSubmit={handleOnSubmit}>
           <TextField
             variant="outlined"
             value={email}
@@ -59,11 +61,12 @@ function Register() {
             margin="normal"
           />
           {error && <div style={{ color: 'red' }}>{error}</div>}
-          <Button type="submit" variant="contained" color="primary">
+          <Button type="submit" variant="contained"  color="primary">
             Register
           </Button>
         </form>
       </div>
+    </div>
     </div>
     </>
   );

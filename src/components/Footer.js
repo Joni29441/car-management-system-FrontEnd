@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-      <footer className="bg-black text-white py-4">
-        <div className="container mt-auto px-4 flex flex-wrap justify-between items-center">
+      <footer className="bg-gray-700  text-white ">
+        <div className="container mt-auto py-28 flex flex-wrap justify-between items-center">
           <div className="w-full sm:w-auto text-center sm:text-left mb-4 sm:mb-0">
             <span className="text-sm">&copy; 2023 <a href="https://seeu.edu.mk" className="hover:underline">South East European University</a>. All Rights Reserved.</span>
           </div>
