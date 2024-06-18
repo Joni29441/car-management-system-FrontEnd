@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import AdminNavbar from '../components/AdminNavbar';
 
 
 
@@ -10,7 +11,6 @@ function VehicleForm () {
   const [year, setYear] = useState('');
   const [price, setPrice] = useState('');
   const [image, setImage] = useState(null);
-
  
   const handleOnSubmit = async () => {
     await fetch('https://localhost:7133/api/vehicle', {
@@ -38,7 +38,8 @@ function VehicleForm () {
   };  
 
   return (
-    <div>
+    <>
+    <AdminNavbar/>
         <TextField
           variant="outlined"
           value={brand}
@@ -77,8 +78,7 @@ function VehicleForm () {
           style={{ marginTop: '16px' }}
         />
         <Button type="submit" variant="contained" color="primary" onClick={handleOnSubmit}>Add Vehicle</Button>
-    </div>
-
+    </>
   );
 };
 

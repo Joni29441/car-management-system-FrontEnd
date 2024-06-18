@@ -1,9 +1,15 @@
 import React from "react";
+import SearchVehicles from "./SearchVehicles";
+import UserNavbar from "../components/UserNavbar";
 
 const VehicleHome = () => {
     return (
 
-        <h1>ALOOOOOOOOO</h1>
+        <>
+        <UserNavbar/>
+        <SearchVehicles/>
+        
+        </>
     );
 }
 

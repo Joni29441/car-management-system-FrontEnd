@@ -3,6 +3,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
 import '../styles/Login.css';
+import HomeNavbar from '../components/HomeNavbar';
 
 function Register() {
   const [email, setEmail] = useState('');
@@ -35,6 +36,8 @@ function Register() {
   };
 
   return (
+    <>
+    <HomeNavbar/>
     <div className="hero-background">
       <div className="hero-content">
         <form onSubmit={handleOnSubmit}>
@@ -62,6 +65,7 @@ function Register() {
         </form>
       </div>
     </div>
+    </>
   );
 }
 

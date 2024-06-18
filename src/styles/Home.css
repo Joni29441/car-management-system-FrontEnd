@@ -13,7 +13,8 @@
   
   .hero-content {
     background: rgba(0, 0, 0, 0.5);
-    padding: 950px;
+    padding: 200px;
+    height: 100%;
   }
   
   .learn-more-button {

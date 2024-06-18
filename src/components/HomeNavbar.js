@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import '../styles/Navbar.css'; 
 
-const Navbar = () => {
+const HonmeNavbar = () => {
   return (
     <AppBar position="static" className="navbar">
       <Toolbar className="toolbar">
@@ -34,4 +34,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default HonmeNavbar;
