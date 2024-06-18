@@ -1,3 +1,28 @@
+
+# Car Management System Frontend
+
+## Description
+This is the frontend part of the Car Management System project. It is built using React and provides a user interface for managing vehicles, viewing transactions, and user authentication.
+
+## Technologies Used
+- React
+- Tailwind CSS
+- Material-UI
+- Axios
+- React Router
+
+## Prerequisites
+- [Node.js](https://nodejs.org/) (v12 or later)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+## Getting Started
+
+### Clone the repository
+```bash
+git clone https://github.com/yourusername/car-management-system-frontend.git
+cd car-management-system-frontend
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
